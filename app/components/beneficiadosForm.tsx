@@ -1,20 +1,21 @@
 'use client'
 interface CardProps {
-  title?: string;
+  title?: string
 }
 
 export const BeneficiadosForm: React.FC<CardProps> = ({ title }) => {
-
   const formSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Formulário enviado');
+    e.preventDefault()
+    console.log('Formulário enviado')
   }
 
   return (
-    <form className="bg-blue-100 px-5 py-3 rounded-2xl" action=""
+    <form
+      className="bg-blue-100 px-5 py-3 rounded-2xl"
+      action=""
       onSubmit={formSubmit}
     >
-      <h2 className="text-blue-500 font-bold">{ title }</h2>
+      <h2 className="text-blue-500 font-bold">{title}</h2>
       <div className="flex flex-wrap text-start gap-x-10 gap-y-5">
         <div className="flex-col">
           <label htmlFor="nome">Nome</label>
@@ -63,5 +64,5 @@ export const BeneficiadosForm: React.FC<CardProps> = ({ title }) => {
         </div>
       </div>
     </form>
-  );
+  )
 }
