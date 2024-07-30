@@ -27,9 +27,9 @@ export default function Home() {
           </p>
 
           <Link href="/planos">
-          <button className="mt-4 bg-blue-500 text-white font-bold py-3 px-5 rounded text-sm  uppercase">
-            Quero contratar
-          </button>
+            <button className="mt-4 bg-blue-500 text-white font-bold py-3 px-5 rounded text-sm  uppercase">
+              Quero contratar
+            </button>
           </Link>
 
           <p className="text-sm text-slate-400 mt-5">
