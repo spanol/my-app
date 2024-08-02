@@ -1,5 +1,4 @@
 'use client'
-
 export const InformacoesForm: React.FC = () => {
   const formSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -70,7 +69,6 @@ export const InformacoesForm: React.FC = () => {
         />
       </div>
 
-      {/* telefone, bairro, cidade, estado */}
       <div className="flex-col">
         <label htmlFor="telefone">Telefone</label>
         <input
@@ -78,6 +76,7 @@ export const InformacoesForm: React.FC = () => {
           type="text"
           id="telefone"
           name="telefone"
+          placeholder="(  ) "
         />
       </div>
 
