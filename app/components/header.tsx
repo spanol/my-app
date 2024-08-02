@@ -4,15 +4,19 @@ export const Header = () => {
   return (
     <header
       className="
-    bg-white
+    flex
+  bg-white
     w-full h-16 px-10
-    py-2 flex text-center items-center justify-between border-t-2 border-b-2"
+    py-2
+    text-center
+    items-center
+    justify-between border-t-2 border-b-2"
     >
       <div
         className="
       flex
-
       gap-4
+      text-sm
       "
       >
         <p>Sobre nós</p>
@@ -20,21 +24,25 @@ export const Header = () => {
         <p>Seguros personalizados</p>
       </div>
 
-      <Image
-        src="/next.svg"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
+      <div className="m-auto">
+        <Image
+          src="/logo-azul.png"
+          width={45}
+          height={45}
+          alt="Next.js Logo"
+          priority
+        />
+      </div>
 
-      <Image
-        src="/next.svg"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
+      <div className="ml-auto">
+        <Image
+          src="/logonow.png"
+          alt="Next.js Logo"
+          width={180}
+          height={37}
+          priority
+        />
+      </div>
     </header>
   )
 }
