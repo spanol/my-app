@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={openSans.className}>
         <Header />
         <RouteMap />
-        <main className="flex bg-white min-h-screen flex-col items-center p-10 pt-0 gap-y-20">
+        <main className="flex text-black-marlin bg-white min-h-screen flex-col items-center p-20 pt-0 gap-y-20">
           {children}
         </main>
       </body>

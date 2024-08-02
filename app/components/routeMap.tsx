@@ -13,7 +13,7 @@ const getSegmentClassName = (index: number, length: number) => {
 
 const SegmentList = ({ segments }: RouteMapProps) => {
   return (
-    <div className="bg-white flex gap-x-1 px-10 py-1 text-blue-500 text-center">
+    <div className="bg-white flex gap-x-1 px-10 py-1 text-primary text-center">
       <SegmentItem
         segment="Inicio"
         index={0}
@@ -59,7 +59,7 @@ export default function RouteMap() {
   const segments = useSelectedLayoutSegments() as string[]
 
   return (
-    <div className="bg-white flex gap-x-1 pl-0 px-10 py-1 text-blue-500 text-center">
+    <div className="bg-white flex gap-x-1 pl-0 px-10 py-1 text-center">
       <SegmentList segments={segments} />
     </div>
   )

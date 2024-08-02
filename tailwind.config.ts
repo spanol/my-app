@@ -7,8 +7,14 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
-    fontFamily: {
-      sans: ['"Open Sans"', 'sans-serif']
+    extend: {
+      colors: {
+        primary: '#0282CE',
+        'primary-light': '#dbeafe',
+        'primary-dark': '#0070f3',
+        secondary: '#FF9A06',
+        'black-marlin': '#3A3A3C'
+      }
     }
   },
   plugins: []
